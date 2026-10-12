@@ -1,0 +1,19 @@
+{{>head}}
+    
+    <form action="/insert" method="POST">
+        <label for="Name">Name</label>
+        <input type="text" name="Name" placeholder="Name">
+        <label for="Size ">Size</label>
+        <input type="text" name="Size" placeholder="Size">
+        <label for="Brand ">Brand</label>
+        <input type="text" name="Brand" placeholder="Brand">
+        <label for="Price ">Price</label>
+        <input type="text" name="Price" placeholder="Price">
+        <label for="Color">Color</label>
+        <input type="text" name="Color" placeholder="Color">
+        <label for="DateCreated">DateCreated</label>
+        <input type="text" name="DateCreated" placeholder="DateCreated">
+        <input type="submit" name="save">
+
+
+    </form>

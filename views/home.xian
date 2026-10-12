@@ -1,0 +1,33 @@
+{{> head }}
+<table class="w-full text-left boader-collapse">
+  <thead>
+    <tr class="bg-gray-50 boarder-b boarder-gray-200 text-xs font-semibold upercase text-gray-500 tracking-wider">
+       
+      <th class="p-4">Name</th>
+      <th class="p-4">Size</th>
+      <th class="p-4">Brand</th>
+      <th class="p-4">Price</th>
+      <th class="p-4">Color</th>
+      <th class="p-4">DateCreated</th>
+
+    </tr>
+    
+  </thead>
+  <tbody class="divide-y divide-gray-100 text-sm">
+    {{#each data}}
+      <tr>
+       <td>{{Name}}</td>
+       <td>{{Size}}</td>
+       <td>{{Brand}}</td>
+       <td>{{Price}}</td>
+       <td>{{Color}}</td>
+       <td>{{DateCreated}}</td>
+       <td><a href="/edit/{{ id }}">Edit</a></td>
+       <td><a href="/delete/{{ id }}">Delete</a></td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+<a href="/add">Add</a>
+
+{{> footer }}

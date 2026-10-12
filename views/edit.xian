@@ -1,0 +1,18 @@
+<form action = "/update/{{data.id}}", method = "POST">
+    <input type="hidden" name="id" placeholder="Name" value="{{data.id}}">
+    <label for="Name">Name</label>
+    <input type="text" name="Name" placeholder="Name" value="{{data.Name}}">
+    <label for="Size">Size</label>
+    <input type="text" name="Size" placeholder="Size" value="{{data.Size}}">
+    <label for="Brand">Brand</label>
+    <input type="text" name="Brand" placeholder="Brand" value="{{data.Brand}}">
+    <label for="Price">Price</label>
+    <input type="text" name="Price" placeholder="Price" value="{{data.Price}}">
+    <label for="Brand">Color</label>
+    <input type="text" name="Color" placeholder="Color" value="{{data.Color}}">
+    <label for="DateCreated">DateCreated</label>
+    <input type="text" name="DateCreated" placeholder="DateCreated" value="{{data.DateCreated}}">
+    <input type="submit" name="save">
+    
+    
+</form>
